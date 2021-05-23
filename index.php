@@ -8,9 +8,25 @@ require_once 'classes/compteEpargne.php';
 $compte1= new CompteCourant('micka', 500,200);
 
 $compte1->retire(200);
+echo "<pre>";
 var_dump($compte1);
+echo "</pre>";
 
 //on ecrit dans la propriete 
+
+
+$compteEpargne = new CompteEpargne('marion',200,10);
+
+echo "<pre>";
+var_dump($compteEpargne);
+echo"</pre>";
+
+$compteEpargne->verserInterets();
+
+echo "<pre>";
+var_dump($compteEpargne);
+echo"</pre>";
+
 
 
 ?>
